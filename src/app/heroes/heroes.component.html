@@ -4,9 +4,7 @@
     <li *ngFor="let hero of heroes">
       <a
         routerLink="/detail/{{ hero.id }}"
-        [class.selected]="hero.id === selectedHero?.id"
-        type="button"
-        (click)="onSelect(hero)"
+     
       >
         <span class="badge">{{ hero.id }}</span> {{ hero.name }}
       </a>
